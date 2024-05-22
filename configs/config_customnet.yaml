@@ -26,7 +26,7 @@ model:
     sd_15_ckpt: #"v1-5-pruned-emaonly.ckpt"
 
     unet_config:
-      target: custom_net.openaimodel.UNetModel                            
+      target: custom_net.openaimodeli.UNetModel                            
       params:
         image_size: 32 # unused
         in_channels: 8
@@ -44,7 +44,7 @@ model:
 
 
     first_stage_config:
-      target: models.autoencoder.AutoencoderKL
+      target: custom_net.autoencoder.AutoencoderKL
       params:
         embed_dim: 4
         monitor: val/rec_loss
@@ -67,11 +67,11 @@ model:
           target: torch.nn.Identity
 
     cond_stage_config:
-      target: customnet_modules.modules.FrozenCLIPImageEmbedder
+      target: custom_net.modules.FrozenCLIPImageEmbedder
 
 
     text_encoder_config:
-      target: customnet_modules.modules.FrozenCLIPEmbedder
+      target: custom_net.modules.FrozenCLIPEmbedder
       params:
         version: openai/clip-vit-large-patch14
 

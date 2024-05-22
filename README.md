@@ -30,6 +30,12 @@ need carvekit-colab==4.1.0
 下载customnet_v1.pth模型，并放在pretrain目录下  
 Download the weights of Customnet customnet_v1.pth and put it to ./pretrain   [link](https://huggingface.co/TencentARC/CustomNet/tree/main)   
 
+首次使用会下载3个的模型文件，分别是      
+clip：文件目录一般在C:/User/你的用户名/.cache/clip/ViT-L-14.pt  
+carvekit的2个脱底模型：  
+目录C:/User/你的用户名/.cache/carvekit/checkpoints/fba/fba_matting.pth     
+目录C:/User/你的用户名/.cache/carvekit/checkpoints/tracer_b7/tracer_b7.pth   
+
 
 4 Other
 ----

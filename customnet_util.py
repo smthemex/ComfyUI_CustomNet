@@ -17,8 +17,9 @@ import sys
 import os
 
 path = os.path.dirname(os.path.abspath(__file__))
-current_path = os.getcwd()
-paths = os.path.join(current_path,"custom_nodes","Comfyui_CustomNet","customnet")
+from folder_paths import base_path
+paths = os.path.join(base_path,"custom_nodes","ComfyUI_CustomNet")
+# print(paths)
 sys.path.append(paths)
 
 def pil_rectangle_crop(im):

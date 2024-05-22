@@ -25,7 +25,7 @@ from .ema import LitEma
 from .distributions import normal_kl, DiagonalGaussianDistribution
 from .autoencoder import VQModelInterface, IdentityFirstStage, AutoencoderKL
 from .util import make_beta_schedule, extract_into_tensor, noise_like
-from .ddim import DDIMSampler
+from .dddim import DDIMSampler
 from .attention import CrossAttention
 
 

@@ -5,8 +5,7 @@ A CustomNet node for ComfyUI
 
 NOTICE
 ----
-注意，暂时不支持离线版的comfyUI，秋叶包，或者铁锅炖一类 ，目前只支持GitHub安装，模块相互引用，在离线版里好像有问题！   
-Note that the comfyUI version of python_embeded is currently not supported！   
+整合包的模块引用问题已经解决，目前下载即用，如果报错，尝试安装需求文件里的库。
 
 
 CustomNet  From: [link](https://github.com/TencentARC/CustomNet)

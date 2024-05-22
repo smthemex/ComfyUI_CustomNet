@@ -2,8 +2,10 @@
 # -*- coding: UTF-8 -*-
 import sys
 import os
+from folder_paths import base_path
+sys.path.append(os.path.join(base_path,"custom_nodes","ComfyUI_CustomNet","custom_net"))
+# print(base_path)
 path = os.path.dirname(os.path.abspath(__file__))
-sys.path.append(os.path.join(path,"custom_net"))
 path_dir = os.path.dirname(path)
 file_path = os.path.dirname(path_dir)
 import numpy as np

@@ -2,3 +2,4 @@ carvekit-colab==4.1.0
 torch-fidelity==0.3.0
 lovely-numpy>=0.2.8
 lovely-tensors>=0.1.14
+-e git+https://github.com/CompVis/taming-transformers.git@master#egg=taming-transformers

@@ -20,7 +20,7 @@ from torchvision.utils import make_grid
 from pytorch_lightning.utilities.rank_zero import rank_zero_only
 from omegaconf import ListConfig
 
-from customnet_util import log_txt_as_img, exists, default, ismap, isimage, mean_flat, count_params, instantiate_from_config
+from .customnet_util import log_txt_as_img, exists, default, ismap, isimage, mean_flat, count_params, instantiate_from_config
 from .ema import LitEma
 from .distributions import normal_kl, DiagonalGaussianDistribution
 from .autoencoder import VQModelInterface, IdentityFirstStage, AutoencoderKL

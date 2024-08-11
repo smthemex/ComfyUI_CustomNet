@@ -1,7 +1,7 @@
 [project]
 name = "comfyui_customnet"
 description = "you can using customnet in comfyUI "
-version = "1.0.0"
+version = "1.1.0"
 license = { file = "LICENSE" }
 dependencies = ["carvekit-colab==4.1.0", "torch-fidelity==0.3.0", "lovely-numpy>=0.2.8", "lovely-tensors>=0.1.14", "-e git+https://github.com/CompVis/taming-transformers.git@master#egg=taming-transformers"]
 
@@ -10,6 +10,6 @@ Repository = "https://github.com/smthemex/ComfyUI_CustomNet"
 #  Used by Comfy Registry https://comfyregistry.org
 
 [tool.comfy]
-PublisherId = "smthemx"
+PublisherId = "smthemex"
 DisplayName = "ComfyUI_CustomNet"
 Icon = ""

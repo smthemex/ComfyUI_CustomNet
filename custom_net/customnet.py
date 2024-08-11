@@ -3,13 +3,19 @@ import os
 from folder_paths import base_path
 sys.path.append(os.path.join(base_path,"custom_nodes","ComfyUI_CustomNet"))
 
-
 import einops
 import torch
 import torch as th
 import torch.nn as nn
 import cv2
-from pytorch_lightning.utilities.rank_zero import rank_zero_only
+
+try:
+    from pytorch_lightning.utilities.rank_zero import rank_zero_only
+except:
+    try:
+        from pytorch_lightning.utilities.distributed import rank_zero_only
+    except:
+        raise "import pytorch_lightning rank_zero_only error"
 import numpy as np
 from torch.optim.lr_scheduler import LambdaLR
 from einops import rearrange, repeat
@@ -25,10 +31,10 @@ from .attention import SpatialTransformer
 from .openaimodel import UNetModel, TimestepEmbedSequential, ResBlock, Downsample, AttentionBlock
 
 from .ddpm import LatentDiffusion
-from customnet_util import log_txt_as_img, exists, instantiate_from_config
+from .customnet_util import log_txt_as_img, exists, instantiate_from_config
 
 from .dddim import DDIMSampler
-from customnet_util import load_state_dict
+from .customnet_util import load_state_dict
 
 
 

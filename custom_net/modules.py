@@ -9,7 +9,7 @@ from transformers import CLIPTokenizer, CLIPTextModel
 import torch.nn.functional as F 
 from torchvision import transforms
 import random
-from customnet_util import default, instantiate_from_config
+from .customnet_util import default, instantiate_from_config
 from .util import make_beta_schedule, extract_into_tensor, noise_like
 import clip
 

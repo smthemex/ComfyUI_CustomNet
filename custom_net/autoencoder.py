@@ -8,7 +8,7 @@ from taming.modules.vqvae.quantize import VectorQuantizer
 from .model import Encoder, Decoder
 from .distributions import DiagonalGaussianDistribution
 
-from customnet_util import instantiate_from_config
+from .customnet_util import instantiate_from_config
 
 
 class VQModel(pl.LightningModule):

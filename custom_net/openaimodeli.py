@@ -18,7 +18,7 @@ from .util import (
     timestep_embedding,
 )
 from .attentioni import SpatialTransformer
-from customnet_util import exists
+from .customnet_util import exists
 
 
 # dummy replace

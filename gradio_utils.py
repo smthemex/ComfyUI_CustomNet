@@ -1,4 +1,4 @@
-from .customnet_util import create_carvekit_interface, load_and_preprocess
+from .custom_net.customnet_util import create_carvekit_interface, load_and_preprocess
 
 def load_preprocess_model():
     carvekit = create_carvekit_interface()
